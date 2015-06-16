@@ -25,7 +25,6 @@ suites:
 - name: kibana3
   run_list:
     - 'recipe[kibana]'
-    - 'recipe[apache2]'
     - 'recipe[kibana::apache]'
   attributes:
     kibana:
@@ -43,7 +42,6 @@ suites:
 - name: kibana3_source
   run_list:
     - 'recipe[kibana]'
-    - 'recipe[apache2]'
     - 'recipe[kibana::apache]'
   attributes:
     kibana:
