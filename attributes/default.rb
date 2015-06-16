@@ -67,20 +67,6 @@ default['kibana']['highlighted_field'] = '@message'
 default['kibana']['primary_field'] = '@message'
 default['kibana']['default_index'] = '@message'
 
-#<> The host to create apache vhost for.
-default['kibana']['apache']['host'] = node['fqdn']
-#<> The interface on which to bind apache.
-default['kibana']['apache']['interface'] = node['ipaddress']
-#<> Enable http auth for Apache
-default['kibana']['apache']['basic_auth'] = 'off'
-#<> Apache http auth username
-default['kibana']['apache']['basic_auth_username'] = 'admin'
-#<> Apache http auth password
-default['kibana']['apache']['basic_auth_password'] = 'PLEASEchangeme'
-#<> The port on which to bind apache.
-default['kibana']['apache']['port'] = 80
-#<> Boolean switch to enable apache search query proxy
-default['kibana']['apache']['proxy'] = false
 #<> The port on which to bind nginx
 default['kibana']['nginx']['port'] = 80
 
