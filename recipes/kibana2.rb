@@ -1,8 +1,9 @@
 # Encoding: utf-8
 
 include_recipe 'kibana'
+include_recipe 'git'
 
-package 'git'
+# package 'git'
 
 git node['kibana']['base_dir'] do
   repository node['kibana']['git']['url']

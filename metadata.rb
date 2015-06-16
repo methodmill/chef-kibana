@@ -10,6 +10,7 @@ version          '0.1.9'
 
 depends 'build-essential'
 depends 'ark'
+depends 'git'
 # suggests 'authbind'
 # suggests 'apt'
 # suggests 'nginx'

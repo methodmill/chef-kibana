@@ -1,9 +1,9 @@
 # Encoding: utf-8
 
 include_recipe 'kibana'
+include_recipe 'git'
 
 if node['kibana']['install_method'] == 'source'
-  package 'git'
 
   git File.join(node['kibana']['base_dir'], 'current') do
     repository node['kibana']['git']['url']
