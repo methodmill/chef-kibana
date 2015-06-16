@@ -74,16 +74,12 @@ Vagrant.configure("2") do |config|
   config.vm.provision :chef_solo do |chef|
     chef.json = {
       "kibana" => {
-        "apache" => {
-          "basic_auth" => 'on'
-        }
       }
     }
 
     chef.run_list = [
         "recipe[apt::default]",
-        "recipe[kibana::default]",
-        "recipe[kibana::apache]"
+        "recipe[kibana::default]"
     ]
   end
 end
